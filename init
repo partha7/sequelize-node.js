@@ -1,0 +1,14 @@
+index.js is created automatically when we initialize sequelize
+
+npx sequelize-cli init
+
+npx sequelize db:create
+
+npx sequelize db:migrate
+(sequelize.sync()) can be used but everytime we start the application we lose the previous db
+
+sequelize model:generate --name User --attributes name:string, email:string, role:string
+
+// To revert a migration
+
+npx sequelize db:migrate:undo
